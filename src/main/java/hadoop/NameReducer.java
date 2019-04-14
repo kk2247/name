@@ -11,13 +11,7 @@ import java.io.IOException;
  * KEYOUT, VALUEOUT 是自定义reduce逻辑处理结果的输出数据类型。此处 keyOut 表示单个单词，valueOut 对应的是总次数
  */
 //<hello,list(1,1,1)>
-public class WordcountReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
-    /**
-     * <angelababy,1><angelababy,1><angelababy,1><angelababy,1><angelababy,1>
-     * <hello,1><hello,1><hello,1><hello,1><hello,1><hello,1>
-     * <banana,1><banana,1><banana,1><banana,1><banana,1><banana,1>
-     * 入参key，是一组相同单词kv对的key
-     */
+public class NameReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
     @Override
     protected void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
         int count=0;

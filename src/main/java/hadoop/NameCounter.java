@@ -8,10 +8,7 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-/**
- *
- */
-public class WordcountDriver {
+public class NameCounter {
     static {
         try {
             System.load("C:/hadoop-2.7.6/bin/hadoop.dll");
@@ -34,11 +31,11 @@ public class WordcountDriver {
 
         /*job.setJar("/home/hadoop/wc.jar");*/
         //指定本程序的jar包所在的本地路径
-        job.setJarByClass(WordcountDriver.class);
+        job.setJarByClass(NameCounter.class);
 
         //指定本业务job要使用的mapper/Reducer业务类
-        job.setMapperClass(WordcountMapper.class);
-        job.setReducerClass(WordcountReducer.class);
+        job.setMapperClass(NameMapper.class);
+        job.setReducerClass(NameReducer.class);
 
         //指定mapper输出数据的kv类型。需要和 Mapper 中泛型的类型保持一致
         job.setMapOutputKeyClass(Text.class);
@@ -49,9 +46,9 @@ public class WordcountDriver {
         job.setOutputValueClass(IntWritable.class);
 
         //指定job的输入原始文件所在目录
-        FileInputFormat.addInputPath(job, new Path("C:\\Users\\22478\\Desktop\\in"));
+        FileInputFormat.addInputPath(job, new Path("result\\input1\\金庸01飞狐外传.txt"));
         //指定job的输出结果所在目录
-        FileOutputFormat.setOutputPath(job, new Path("C:\\Users\\22478\\Desktop\\out"));
+        FileOutputFormat.setOutputPath(job, new Path("result\\output1"));
 
         //将job中配置的相关参数，以及job所用的java类所在的jar包，提交给yarn去运行
         /*job.submit();*/
