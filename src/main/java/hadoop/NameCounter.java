@@ -11,14 +11,16 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 public class NameCounter {
     static {
         try {
-            System.load("C:/hadoop-2.7.6/bin/hadoop.dll");
+//            System.load("C:/hadoop-2.7.6/bin/hadoop.dll");
+            System.load("D:\\software\\hadoop-2.7.6\\bin\\hadoop.dll");
         } catch (UnsatisfiedLinkError e) {
             System.err.println("Native code library failed to load.\n" + e);
             System.exit(1);
         }
     }
     public static void main(String[] args) throws Exception {
-        System.setProperty("hadoop.home.dir", "C:/hadoop-2.7.6");
+//        System.setProperty("hadoop.home.dir", "C:/hadoop-2.7.6");
+        System.setProperty("hadoop.home.dir", "D:\\software\\hadoop-2.7.6");
         if (args == null || args.length == 0) {
             return;
         }

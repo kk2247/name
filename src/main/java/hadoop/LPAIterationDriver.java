@@ -8,10 +8,11 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 /**
- * @author KGZ
- * @date 2019/4/14 17:03
+ * @Author: KGZ
+ * @Date: 2019/4/15 0015 21:51
+ * @Version 1.8
  */
-public class LPAinitDriver {
+public class LPAIterationDriver {
     static {
         try {
 //            System.load("C:/hadoop-2.7.6/bin/hadoop.dll");
@@ -29,15 +30,15 @@ public class LPAinitDriver {
         }
         Configuration conf = new Configuration();
         Job job = Job.getInstance(conf);
-        job.setJarByClass(LPAinitDriver.class);
-        job.setMapperClass(LPAinitMapper.class);
-        job.setReducerClass(LPAinitReducer.class);
+        job.setJarByClass(LPAIterationDriver.class);
+        job.setMapperClass(LPAIterationMapper.class);
+        job.setReducerClass(LPAIterationReducer.class);
         job.setMapOutputKeyClass(Text.class);
         job.setMapOutputValueClass(Text.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
-        FileInputFormat.addInputPath(job, new Path("result\\output2\\test11\\part-r-00000"));
-        FileOutputFormat.setOutputPath(job, new Path("result\\output3"));
+        FileInputFormat.addInputPath(job, new Path("result\\output3\\part-r-00000"));
+        FileOutputFormat.setOutputPath(job, new Path("result\\output4"));
         boolean res = job.waitForCompletion(true);
         System.exit(res?0:1);
     }

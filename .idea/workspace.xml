@@ -2,28 +2,72 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de69ec0e-4456-4863-9f08-a0ae07658150" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file/jinyong_all_person.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/result/input1/金庸01飞狐外传.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/result/input1/金庸02雪山飞狐.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hadoop/LPAinitDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hadoop/LPAinitMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hadoop/LPAinitReducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hadoop/PageRankDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hadoop/PageRankMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hadoop/PageRankReducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hadoop/RateDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hadoop/RateMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hadoop/RateReducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/AnsjTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/AnsjUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hadoop/LPAIterationDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hadoop/LPAIterationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hadoop/LPAIterationReducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/WordcountDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/NameCounter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/WordcountMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/NameMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/WordcountReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/NameReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/WordcountDriver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/WordcountMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/WordcountReducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output1/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output1/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output1/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output1/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test1/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test1/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test1/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test1/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test10/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test10/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test10/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test10/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test11/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test11/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test11/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test11/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test2/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test2/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test2/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test2/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test3/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test3/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test3/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test3/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test4/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test4/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test4/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test4/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test5/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test5/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test5/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test5/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test6/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test6/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test6/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test6/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test7/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test7/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test7/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test7/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test8/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test8/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test8/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test8/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test9/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test9/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test9/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output2/test9/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output3/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output3/.part-r-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output3/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/output3/part-r-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/LPAinitDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/LPAinitDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/NameCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/NameCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/PageRankDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/PageRankDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hadoop/RateDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hadoop/RateDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/LPAinitDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/LPAinitDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/NameCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/NameCounter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/PageRankDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/PageRankDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hadoop/RateDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hadoop/RateDriver.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,53 +76,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1353208251">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="7" />
-          <entry key="JAVA" value="20" />
-          <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Properties" value="1" />
-          <entry key="XML" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="3765" />
-          <entry key="PLAIN_TEXT" value="14" />
-          <entry key="XML" value="19" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/PageRankDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="203">
+              <caret line="32" column="67" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2470#2486#0" expanded="true" />
-                <element signature="e#2537#2553#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/PageRankReducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="43" selection-start-line="4" selection-end-line="4" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -86,44 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/RateDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/LPAinitMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/LPAinitReducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/LPAinitDriver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+            <state relative-caret-position="80">
+              <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,8 +105,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/NameCounter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="50" column="53" lean-forward="true" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+            <state relative-caret-position="96">
+              <caret line="22" column="76" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -144,10 +115,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/PageRankMapper.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/LPAinitReducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="24" column="75" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
+            <state relative-caret-position="312">
+              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -156,19 +127,50 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0.jar!/org/apache/hadoop/mapreduce/Job.class">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/LPAinitDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="697" selection-start-line="697" selection-end-line="697" />
+            <state relative-caret-position="288">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/result/output2/test1/part-r-00000">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/LPAIterationMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1862">
-              <caret column="8" selection-start-column="7" selection-end-column="8" />
+            <state relative-caret-position="272">
+              <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/LPAIterationReducer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#473#489#0" expanded="true" />
+                <element signature="e#952#979#0" expanded="true" />
+                <element signature="e#1142#1614#0" expanded="true" />
+                <element signature="e#1613#1614#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/result/output3/part-r-00000">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="3" selection-start-column="3" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -197,23 +199,20 @@
         <option value="$PROJECT_DIR$/result/output1/kk.txt" />
         <option value="$PROJECT_DIR$/result/input2/kk.txt" />
         <option value="$PROJECT_DIR$/src/main/java/hadoop/RateMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hadoop/NameCounter.java" />
         <option value="$PROJECT_DIR$/src/main/java/hadoop/RateReducer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hadoop/RateDriver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hadoop/PageRankDriver.java" />
         <option value="$PROJECT_DIR$/src/main/java/hadoop/PageRankMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/hadoop/LPAinitMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/hadoop/PageRankReducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/hadoop/LPAinitReducer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hadoop/NameCounter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hadoop/RateDriver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hadoop/PageRankDriver.java" />
         <option value="$PROJECT_DIR$/src/main/java/hadoop/LPAinitDriver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hadoop/LPAIterationDriver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hadoop/LPAIterationMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hadoop/LPAIterationReducer.java" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -222,10 +221,13 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="277" />
+    <option name="width" value="975" />
+    <option name="height" value="1049" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -235,14 +237,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="name" type="b2602c69:ProjectViewProjectNode" />
               <item name="name" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="name" type="b2602c69:ProjectViewProjectNode" />
+              <item name="name" type="462c0819:PsiDirectoryNode" />
+              <item name="file" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="name" type="b2602c69:ProjectViewProjectNode" />
@@ -259,7 +266,13 @@
               <item name="name" type="b2602c69:ProjectViewProjectNode" />
               <item name="name" type="462c0819:PsiDirectoryNode" />
               <item name="result" type="462c0819:PsiDirectoryNode" />
-              <item name="output2" type="462c0819:PsiDirectoryNode" />
+              <item name="output1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="name" type="b2602c69:ProjectViewProjectNode" />
+              <item name="name" type="462c0819:PsiDirectoryNode" />
+              <item name="result" type="462c0819:PsiDirectoryNode" />
+              <item name="output3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="name" type="b2602c69:ProjectViewProjectNode" />
@@ -304,7 +317,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555232721168" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555341052175" />
+    <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -331,7 +345,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LPAinitDriver">
+  <component name="RunManager" selected="Application.LPAIterationDriver">
+    <configuration name="LPAIterationDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hadoop.LPAIterationDriver" />
+      <module name="name" />
+      <option name="PROGRAM_PARAMETERS" value="input output" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hadoop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LPAinitDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hadoop.LPAinitDriver" />
       <module name="name" />
@@ -388,36 +416,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordcountDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hadoop.WordcountDriver" />
-      <module name="name" />
-      <option name="PROGRAM_PARAMETERS" value="input output" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hadoop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.WordcountDriver" />
       <item itemvalue="Application.RateDriver" />
       <item itemvalue="Application.NameCounter" />
       <item itemvalue="Application.PageRankDriver" />
       <item itemvalue="Application.LPAinitDriver" />
+      <item itemvalue="Application.LPAIterationDriver" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LPAIterationDriver" />
         <item itemvalue="Application.LPAinitDriver" />
         <item itemvalue="Application.PageRankDriver" />
         <item itemvalue="Application.RateDriver" />
         <item itemvalue="Application.NameCounter" />
-        <item itemvalue="Application.WordcountDriver" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SQLPlugin.ProjectConfiguration">
+    <queries />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -430,57 +447,61 @@
       <option name="presentableId" value="Default" />
       <updated>1555147337929</updated>
       <workItem from="1555147342612" duration="23167000" />
+      <workItem from="1555254558534" duration="668000" />
+      <workItem from="1555296059525" duration="7894000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23167000" />
+    <option name="totallyTimeSpent" value="31729000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Capture Tool" />
-      <window_info id="Azure Explorer" weight="0.32995737" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23187633" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2386059" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Remote Spark Job in Cluster" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32887402" />
-      <window_info anchor="bottom" id="Cosmos Serverless Spark Jobs" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Debug Remote Spark Job in Cluster" />
-      <window_info anchor="bottom" id="Azure Activity Log" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Image Layers" order="6" />
+      <window_info id="Azure Explorer" order="7" weight="0.32995737" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.41917503" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.36343366" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24193548" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.40175954" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Debug Remote Spark Job in Cluster" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Remote Spark Job in Cluster" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.57478005" />
+      <window_info anchor="bottom" id="Cosmos Serverless Spark Jobs" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Azure Activity Log" order="16" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="17" />
+      <window_info anchor="bottom" id="Docker" order="18" show_stripe_button="false" />
+      <window_info anchor="bottom" id="SQL" order="19" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Maven" order="9" />
+      <window_info anchor="right" id="SciView" order="10" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -503,6 +524,12 @@
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/hadoop/LPAIterationReducer.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -510,57 +537,15 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/ansj/ansj_seg/5.1.6/ansj_seg-5.1.6.jar!/org/ansj/domain/Result.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#522#523#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/ansj/ansj_seg/5.1.6/ansj_seg-5.1.6.jar!/org/ansj/domain/Term.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="181" selection-start-line="181" selection-end-line="181" />
-          <folding>
-            <element signature="e#2540#2541#0" expanded="true" />
-            <element signature="e#2572#2573#0" expanded="true" />
-            <element signature="e#4630#4631#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/ansj/ansj_seg/5.1.6/ansj_seg-5.1.6.jar!/org/ansj/domain/Result.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/ansj/ansj_seg/5.1.6/ansj_seg-5.1.6.jar!/org/ansj/domain/Term.class" />
     <entry file="file://$PROJECT_DIR$/file/jinyong_all_person.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2100" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/AnsjTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="35" column="59" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/output1/kk">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="9" lean-forward="true" selection-end-line="15492" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/result/output1/kk" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
@@ -568,148 +553,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result/input2/kk.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="15478" column="8" selection-start-line="15478" selection-start-column="7" selection-end-line="15478" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/RateMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/output2/part-r-00000">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2087" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/AnsjUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="41" column="40" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#392#400#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/result/input2/kk.txt" />
+    <entry file="file://$PROJECT_DIR$/result/output2/part-r-00000" />
     <entry file="file://$PROJECT_DIR$/result/input1/金庸02雪山飞狐.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/result/input1/金庸01飞狐外传.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/result/output1/part-r-00000">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/NameReducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="13" column="80" selection-start-line="13" selection-start-column="80" selection-end-line="13" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/NameMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="22" column="54" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/RateReducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#444#452#0" expanded="true" />
-            <element signature="e#502#511#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/2.2.0/hadoop-common-2.2.0.jar!/org/apache/hadoop/conf/Configuration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="211" selection-start-line="211" selection-end-line="211" />
-          <folding>
-            <element signature="e#8093#8094#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0.jar!/org/apache/hadoop/mapreduce/lib/input/FileInputFormat.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="282" selection-start-line="282" selection-end-line="282" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/2.2.0/hadoop-common-2.2.0.jar!/org/apache/hadoop/fs/Path.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="83" column="11" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0.jar!/org/apache/hadoop/mapreduce/lib/output/FileOutputFormat.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0.jar!/org/apache/hadoop/mapreduce/Job.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="697" selection-start-line="697" selection-end-line="697" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result/output2/test1/part-r-00000">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1862">
-          <caret column="8" selection-start-column="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/2.2.0/hadoop-common-2.2.0.jar!/org/apache/hadoop/conf/Configuration.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0.jar!/org/apache/hadoop/mapreduce/lib/input/FileInputFormat.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-common/2.2.0/hadoop-common-2.2.0.jar!/org/apache/hadoop/fs/Path.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0.jar!/org/apache/hadoop/mapreduce/lib/output/FileOutputFormat.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0.jar!/org/apache/hadoop/mapreduce/Job.class" />
     <entry file="file://$PROJECT_DIR$/result/output2/test2/part-r-00000">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/PageRankDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2470#2486#0" expanded="true" />
-            <element signature="e#2537#2553#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/PageRankMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="24" column="75" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -718,9 +578,16 @@
         <state relative-caret-position="-1650" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/result/output2/test1/part-r-00000">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/LPAinitMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
+        <state relative-caret-position="480">
           <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -730,15 +597,103 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/PageRankReducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="43" selection-start-line="4" selection-end-line="4" selection-end-column="43" />
+        <state relative-caret-position="216">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/LPAinitReducer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/RateMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        <state relative-caret-position="408">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/RateReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/AnsjTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="35" column="59" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/NameMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="22" column="54" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/NameReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="13" column="80" selection-start-line="13" selection-start-column="80" selection-end-line="13" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/PageRankMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="75" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/AnsjUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="984">
+          <caret line="41" column="40" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/output1/part-r-00000">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1296" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/RateDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/PageRankDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="32" column="67" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -747,18 +702,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/NameCounter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="50" column="53" lean-forward="true" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+        <state relative-caret-position="96">
+          <caret line="22" column="76" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/RateDriver.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/LPAinitReducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+        <state relative-caret-position="312">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -767,10 +722,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/LPAinitDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        <state relative-caret-position="288">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/LPAIterationDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/output4/part-r-00000">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="128" column="3" lean-forward="true" selection-start-line="128" selection-start-column="3" selection-end-line="128" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/LPAIterationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/output3/part-r-00000">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hadoop/LPAIterationReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#473#489#0" expanded="true" />
+            <element signature="e#952#979#0" expanded="true" />
+            <element signature="e#1142#1614#0" expanded="true" />
+            <element signature="e#1613#1614#0" expanded="true" />
           </folding>
         </state>
       </provider>
