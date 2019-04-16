@@ -22,7 +22,7 @@ public class LPAIterationMapper extends Mapper<LongWritable, Text,Text,Text> {
         String link=line2.split("#")[1];
         String[] names=link.split(";");
         context.write(new Text(name1),new Text("@"+link));
-        context.write(new Text(name1),new Text("$"+pageRank));
+        context.write(new Text(name1),new Text("!"+pageRank));
         context.write(new Text(name1),new Text("&"+label));
         for(String name:names){
             context.write(new Text(name.split(":")[0]),new Text(label+"#"+name1+"#"+name.split(":")[1]));

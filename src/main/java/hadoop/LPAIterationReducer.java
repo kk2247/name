@@ -12,6 +12,7 @@ import java.util.*;
  * @Version 1.8
  */
 public class LPAIterationReducer extends Reducer<Text,Text,Text,Text> {
+    private HashMap<String,String> nameNumber=new HashMap<String, String>();
     @Override
     protected void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
         HashMap<String,Double> map=new HashMap<String, Double>();
@@ -23,13 +24,13 @@ public class LPAIterationReducer extends Reducer<Text,Text,Text,Text> {
             String content=text.toString();
             if(content.startsWith("@")){
                 link=content.split("@")[1];
-            }else if(content.startsWith("$")){
-                pageRank=content.split("$")[1];
+            }else if(content.startsWith("!")){
+                pageRank=content.split("!")[1];
             }else if(content.startsWith("&")){
                 label=content.split("&")[1];
             }else{
                 String[] con=content.split("#");
-                map.put(con[0],Double.valueOf(con[2]));
+                map.put(con[0]+"#"+con[1],Double.valueOf(con[2]));
             }
         }
         List<Map.Entry<String, Double>> keyList = new LinkedList<Map.Entry<String, Double>>(map.entrySet());
@@ -45,10 +46,15 @@ public class LPAIterationReducer extends Reducer<Text,Text,Text,Text> {
                 }
             }
         });
-        String number=keyList.get(0).getKey();
+
+        String number=keyList.get(0).getKey().split("#")[0];
+        String string=keyList.get(0).getKey().split("#")[1];
+        if(nameNumber.containsKey(keyList.get(0).getKey().split("#")[1])) {
+            number = nameNumber.get(keyList.get(0).getKey().split("#")[1]);
+        }
         String key1=key.toString()+"#"+number;
         String content1=pageRank+"#"+link;
+        nameNumber.put(key.toString(),number);
         context.write(new Text(key1),new Text(content1));
-        System.out.println();
     }
 }
