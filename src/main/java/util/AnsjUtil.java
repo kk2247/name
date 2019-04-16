@@ -46,7 +46,7 @@ public class AnsjUtil {
         for(int i=0; i<terms.size(); i++) {
             String word = terms.get(i).getName();
             String natureStr = terms.get(i).getNatureStr();
-            if(expectedNature.contains(natureStr) && allName.contains(word)){
+            if(allName.contains(word)){
                 int counter=0;
                 for(String name:names){
                     if(name.equals(word)){

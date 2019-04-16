@@ -15,7 +15,6 @@ public class NameMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
      * map阶段的业务逻辑就写在自定义的map()方法中 maptask会对每一行输入数据调用一次我们自定义的map()方法
      */
     @Override
-//    hello,1 hello,1
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         // 将maptask传给我们的文本内容先转换成String
         String line = value.toString();

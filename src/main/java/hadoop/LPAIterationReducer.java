@@ -52,9 +52,19 @@ public class LPAIterationReducer extends Reducer<Text,Text,Text,Text> {
         if(nameNumber.containsKey(keyList.get(0).getKey().split("#")[1])) {
             number = nameNumber.get(keyList.get(0).getKey().split("#")[1]);
         }
+        if(nameNumber.containsKey(key.toString())){
+            number=nameNumber.get(key.toString());
+        }
         String key1=key.toString()+"#"+number;
         String content1=pageRank+"#"+link;
+        String[] linkList=link.split(";");
+        for(int i = 0;i<keyList.size();i++){
+            if(keyList.get(i).getValue()>0.001){
+                nameNumber.put(keyList.get(i).getKey().split("#")[1],number);
+            }
+        }
         nameNumber.put(key.toString(),number);
+        nameNumber.put(string,number);
         context.write(new Text(key1),new Text(content1));
     }
 }

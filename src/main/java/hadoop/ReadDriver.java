@@ -9,9 +9,9 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 /**
  * @author KGZ
- * @date 2019/4/16 9:35
+ * @date 2019/4/16 13:48
  */
-public class LPAReorganizeDriver {
+public class ReadDriver {
     static {
         try {
             System.load("C:/hadoop-2.7.6/bin/hadoop.dll");
@@ -29,15 +29,15 @@ public class LPAReorganizeDriver {
         }
         Configuration conf = new Configuration();
         Job job = Job.getInstance(conf);
-        job.setJarByClass(LPAReorganizeDriver.class);
-        job.setMapperClass(LPAReorganizeMapper.class);
-        job.setReducerClass(LPAReorganizeReducer.class);
+        job.setJarByClass(ReadDriver.class);
+        job.setMapperClass(ReadMapper.class);
+        job.setReducerClass(ReadReducer.class);
         job.setMapOutputKeyClass(Text.class);
         job.setMapOutputValueClass(Text.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
-        FileInputFormat.addInputPath(job, new Path("result\\output4\\test10\\part-r-00000"));
-        FileOutputFormat.setOutputPath(job, new Path("result\\output5"));
+        FileInputFormat.addInputPath(job, new Path("result\\input1"));
+        FileOutputFormat.setOutputPath(job, new Path("result\\output0"));
         boolean res = job.waitForCompletion(true);
         System.exit(res ? 0 : 1);
     }

@@ -28,7 +28,7 @@ public class LPAIterationDriver {
         if (args == null || args.length == 0) {
             return;
         }
-        for(int i=0;i<20;i++){
+        for(int i=0;i<10;i++){
             Configuration conf = new Configuration();
             Job job = Job.getInstance(conf);
             job.setJarByClass(LPAIterationDriver.class);
