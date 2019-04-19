@@ -2,6 +2,7 @@ package util;
 
 import org.ansj.domain.Result;
 import org.ansj.domain.Term;
+import org.ansj.library.DicLibrary;
 import org.ansj.splitWord.analysis.ToAnalysis;
 
 import java.io.*;
@@ -25,6 +26,7 @@ public class AnsjUtil {
             allName=new HashSet<String>();
             String line="";
             while((line=reader.readLine())!=null){
+                DicLibrary.insert(DicLibrary.DEFAULT,line);
                 allName.add(line);
             }
         } catch (FileNotFoundException e) {

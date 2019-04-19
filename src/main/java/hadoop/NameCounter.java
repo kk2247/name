@@ -48,12 +48,9 @@ public class NameCounter {
         job.setOutputValueClass(IntWritable.class);
 
         //指定job的输入原始文件所在目录
-        FileInputFormat.addInputPath(job, new Path("result\\input1"));
+        FileInputFormat.addInputPath(job, new Path("result\\output\\part-r-00000"));
         //指定job的输出结果所在目录
         FileOutputFormat.setOutputPath(job, new Path("result\\output1"));
-
-        //将job中配置的相关参数，以及job所用的java类所在的jar包，提交给yarn去运行
-        /*job.submit();*/
         boolean res = job.waitForCompletion(true);
         System.exit(res?0:1);
     }

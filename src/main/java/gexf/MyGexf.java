@@ -11,8 +11,6 @@ import it.uniroma1.dis.wsngroup.gexf4j.core.data.AttributeType;
 import it.uniroma1.dis.wsngroup.gexf4j.core.impl.GexfImpl;
 import it.uniroma1.dis.wsngroup.gexf4j.core.impl.StaxGraphWriter;
 import it.uniroma1.dis.wsngroup.gexf4j.core.impl.data.AttributeListImpl;
-
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Calendar;

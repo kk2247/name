@@ -12,59 +12,70 @@ import java.util.*;
  * @Version 1.8
  */
 public class LPAIterationReducer extends Reducer<Text,Text,Text,Text> {
-    private HashMap<String,String> nameNumber=new HashMap<String, String>();
+    Map<String,String> name_label_map = new HashMap<String,String>();
+
     @Override
     protected void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
-        HashMap<String,Double> map=new HashMap<String, Double>();
-        String link="";
-        String pageRank="";
-        String label="";
+        String label = "";
+        String nameList = "";
+        String pr = "";
+        Map<String,String> relation_name_label = new HashMap<String,String>();
         for(Text text:values){
-            String name=key.toString();
-            String content=text.toString();
-            if(content.startsWith("@")){
-                link=content.split("@")[1];
-            }else if(content.startsWith("!")){
-                pageRank=content.split("!")[1];
-            }else if(content.startsWith("&")){
-                label=content.split("&")[1];
-            }else{
-                String[] con=content.split("#");
-                map.put(con[0]+"#"+con[1],Double.valueOf(con[2]));
+            String str = text.toString();
+            if (str.length() > 0 && str.charAt(0) == '$'){
+                label = str.replace("$","");
+            }else if (str.length() > 0 &&str.charAt(0) == '@'){
+                pr = str.replace("@","");
+            }else if (str.length() > 0 &&str.charAt(0) == '#'){
+                nameList = str.replace("#","");
+            }else if (str.length() > 0){
+                String[] element = str.split("#");
+                relation_name_label.put(element[1],element[0]);
             }
         }
-        List<Map.Entry<String, Double>> keyList = new LinkedList<Map.Entry<String, Double>>(map.entrySet());
-        Collections.sort(keyList, new Comparator<Map.Entry<String, Double>>() {
-            public int compare(Map.Entry<String, Double> o1,
-                               Map.Entry<String, Double> o2) {
-                if(o2.getValue().compareTo(o1.getValue())>0){
-                    return 1;
-                }else if(o2.getValue().compareTo(o1.getValue())<0){
-                    return -1;
-                }  else {
-                    return 0;
-                }
-            }
-        });
 
-        String number=keyList.get(0).getKey().split("#")[0];
-        String string=keyList.get(0).getKey().split("#")[1];
-        if(nameNumber.containsKey(keyList.get(0).getKey().split("#")[1])) {
-            number = nameNumber.get(keyList.get(0).getKey().split("#")[1]);
-        }
-        if(nameNumber.containsKey(key.toString())){
-            number=nameNumber.get(key.toString());
-        }
-        String key1=key.toString()+"#"+number;
-        String content1=pageRank+"#"+link;
-        String[] linkList=link.split(";");
-        for(int i = 0;i<keyList.size();i++){
-            if(keyList.get(i).getValue()>0.001){
-                nameNumber.put(keyList.get(i).getKey().split("#")[1],number);
+        Map<String,Float> label_pr_map = new HashMap<String,Float>();
+        StringTokenizer nameList_Tokenizer = new StringTokenizer(nameList,";");
+        while(nameList_Tokenizer.hasMoreTokens()){
+            String[] name_pr = nameList_Tokenizer.nextToken().split(":");
+            Float current_pr = Float.parseFloat(name_pr[1]);
+            String current_label = relation_name_label.get(name_pr[0]);
+            Float label_pr;
+            if ((label_pr = label_pr_map.get(current_label)) != null){
+                label_pr_map.put(current_label,label_pr+current_pr);
+            }else{
+                label_pr_map.put(current_label,current_pr);
             }
         }
-        nameNumber.put(key.toString(),number);
-        nameNumber.put(string,number);
-        context.write(new Text(key1),new Text(content1));
+
+
+        StringTokenizer tokenizer = new StringTokenizer(nameList,";");
+        float maxPr = Float.MIN_VALUE;
+        List<String> maxNameList = new ArrayList<String>();
+        while (tokenizer.hasMoreTokens()){
+            String[] element = tokenizer.nextToken().split(":");
+            float tmpPr = label_pr_map.get(relation_name_label.get(element[0]));
+            if (maxPr < tmpPr){
+                maxNameList.clear();
+                maxPr = tmpPr;
+                maxNameList.add(element[0]);
+            }else if (maxPr == tmpPr){
+                maxNameList.add(element[0]);
+            }
+        }
+
+        Random random = new Random();
+        int index = random.nextInt(maxNameList.size());
+        String target_name = maxNameList.get(index);
+        String target_label = relation_name_label.get(target_name);
+        if (name_label_map.get(target_name) != null){
+            target_label = name_label_map.get(target_name);
+        }else{
+            name_label_map.put(key.toString(),target_label);
+        }
+        if (target_label == null){
+            System.out.println();
+        }
+        context.write(new Text(key.toString() + "#" + target_label),new Text(pr + "#" + nameList));
     }
 }

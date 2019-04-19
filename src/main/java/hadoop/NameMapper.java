@@ -8,7 +8,9 @@ import util.AnsjUtil;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class NameMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
     /**
@@ -16,15 +18,26 @@ public class NameMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
      */
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-        // 将maptask传给我们的文本内容先转换成String
         String line = value.toString();
-        AnsjUtil ansjUtil=new AnsjUtil();
-        ArrayList<String> names=ansjUtil.getPersonName(line);
-        for(int i= 0;i<names.size();i++){
-            for(int j=0;j<names.size();j++){
-                if(i!=j){
-                    String newString = names.get(i)+","+names.get(j);
-                    context.write(new Text(newString), new IntWritable(1));
+        Set<String> set=new HashSet<String>();
+        if(line.trim()!=""){
+            String[] names=line.split(" ");
+            for (int i=0;i<names.length;i++){
+                if(set.contains(names[i])){
+
+                }else{
+                    set.add(names[i]);
+                }
+            }
+            ArrayList<String> strings=new ArrayList<String>(set);
+            if(strings.size()>1){
+                for(int i= 0;i<strings.size();i++){
+                    for(int j=0;j<strings.size();j++){
+                        if(i!=j){
+                            String newString = strings.get(i)+","+strings.get(j);
+                            context.write(new Text(newString), new IntWritable(1));
+                        }
+                    }
                 }
             }
         }
